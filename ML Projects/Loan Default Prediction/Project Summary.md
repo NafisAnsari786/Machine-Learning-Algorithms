@@ -36,7 +36,7 @@ F1-Score: 0.84
 This suggests that the model performs better on class 0 (non-defaulters), which is likely because it has many more instances in the dataset.
 
 ## **2. Confusion Matrix**
-```
+```python
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 ```
 
