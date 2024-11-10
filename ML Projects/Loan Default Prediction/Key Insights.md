@@ -1,5 +1,5 @@
 ## Key Insights:
-
+ 
 - **Credit History**: Applicants with no or poor credit history tend to have a higher likelihood of defaulting on loans. This suggests that financial institutions should consider enforcing a minimum credit score or history requirement before approving loans.
 
 - **Loan Amount vs. Income**: Larger loan amounts are associated with higher default risk, especially for applicants with lower income. Therefore, lending institutions could introduce stricter limits on loan amounts for low-income applicants to mitigate default risks.
