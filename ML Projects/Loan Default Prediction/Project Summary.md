@@ -1,7 +1,7 @@
 ## **1. Classification Report**
 This report gives detailed statistics on the performance of your classification model. It includes the following metrics for each class (0 and 1) as well as average metrics for the model:
 
-* Precision: The percentage of true positive predictions (correct defaulters) out of all positive predictions (predicted defaulters).
+*Precision: The percentage of true positive predictions (correct defaulters) out of all positive predictions (predicted defaulters).
 
 Precision for class 0 (Non-Defaulters): 0.89 – This means that when the model predicts non-default, 89% of the time it is correct.
 Precision for class 1 (Defaulters): 0.62 – This means that when the model predicts default, 62% of the time it is correct.
