@@ -6,9 +6,9 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 
 * Precision: The percentage of true positive predictions (correct defaulters) out of all positive predictions (predicted defaulters).
 
-Precision for class 0 (Non-Defaulters): 0.89 – This means that when the model predicts non-default, 89% of the time it is correct.
-Precision for class 1 (Defaulters): 0.62 – This means that when the model predicts default, 62% of the time it is correct.
-Recall: The percentage of true positive predictions (correct defaulters) out of all actual positives (actual defaulters).
+  * Precision for class 0 (Non-Defaulters): 0.89 – This means that when the model predicts non-default, 89% of the time it is correct.
+  * Precision for class 1 (Defaulters): 0.62 – This means that when the model predicts default, 62% of the time it is correct.
+* Recall: The percentage of true positive predictions (correct defaulters) out of all actual positives (actual defaulters).
 
 Recall for class 0 (Non-Defaulters): 1.00 – This means that all actual non-defaulters were correctly predicted by the model.
 Recall for class 1 (Defaulters): 0.03 – This is very low, indicating that only 3% of the actual defaulters were correctly identified by the model.
