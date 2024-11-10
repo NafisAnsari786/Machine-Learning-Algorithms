@@ -4,35 +4,35 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 ```
 * This report gives detailed statistics on the performance of your classification model. It includes the following metrics for each class (0 and 1) as well as average metrics for the model:
 
-* Precision: The percentage of true positive predictions (correct defaulters) out of all positive predictions (predicted defaulters).
+* **Precision:** The percentage of true positive predictions (correct defaulters) out of all positive predictions (predicted defaulters).
 
-  * Precision for class 0 (Non-Defaulters): 0.89 – This means that when the model predicts non-default, 89% of the time it is correct.
-  * Precision for class 1 (Defaulters): 0.62 – This means that when the model predicts default, 62% of the time it is correct.
+  * **Precision for class 0 (Non-Defaulters):** 0.89 – This means that when the model predicts non-default, 89% of the time it is correct.
+  * **Precision for class 1 (Defaulters):** 0.62 – This means that when the model predicts default, 62% of the time it is correct.
 
-* Recall: The percentage of true positive predictions (correct defaulters) out of all actual positives (actual defaulters).
-  * Recall for class 0 (Non-Defaulters): 1.00 – This means that all actual non-defaulters were correctly predicted by the model.
-  * Recall for class 1 (Defaulters): 0.03 – This is very low, indicating that only 3% of the actual defaulters were correctly identified by the model.
+* **Recall:** The percentage of true positive predictions (correct defaulters) out of all actual positives (actual defaulters).
+  * **Recall for class 0 (Non-Defaulters):** 1.00 – This means that all actual non-defaulters were correctly predicted by the model.
+  * **Recall for class 1 (Defaulters):** 0.03 – This is very low, indicating that only 3% of the actual defaulters were correctly identified by the model.
 
-* F1-Score: The harmonic mean of precision and recall. It’s a combined measure that considers both false positives and false negatives.
-  * F1-Score for class 0 (Non-Defaulters): 0.94 – A good F1 score, meaning that for non-defaulters, the model is quite accurate.
-  * F1-Score for class 1 (Defaulters): 0.06 – A very poor F1 score for defaulters, meaning the model has difficulty predicting defaulters accurately.
+* **F1-Score:** The harmonic mean of precision and recall. It’s a combined measure that considers both false positives and false negatives.
+  * **F1-Score for class 0 (Non-Defaulters):** 0.94 – A good F1 score, meaning that for non-defaulters, the model is quite accurate.
+  * **F1-Score for class 1 (Defaulters):** 0.06 – A very poor F1 score for defaulters, meaning the model has difficulty predicting defaulters accurately.
 
-* Support: The number of occurrences of each class in the test set.
-  * Support for class 0 (Non-Defaulters): 67,681
-  * Support for class 1 (Defaulters): 8,924
+* **Support:** The number of occurrences of each class in the test set.
+  * **Support for class 0 (Non-Defaulters):** 67,681
+  * **Support for class 1 (Defaulters):** 8,924
  
-* Overall accuracy: 0.89 – This means that 89% of the total predictions are correct, but accuracy alone doesn’t tell the whole story in imbalanced datasets like this one (where defaulters are much less frequent).
+* **Overall accuracy:** 0.89 – This means that 89% of the total predictions are correct, but accuracy alone doesn’t tell the whole story in imbalanced datasets like this one (where defaulters are much less frequent).
 
-* Macro Average:
-  * Precision: 0.75
-  * Recall: 0.52
-  * F1-Score: 0.50
+* **Macro Average:**
+  * **Precision:** 0.75
+  * **Recall:** 0.52
+  * **F1-Score:** 0.50
   * These averages are computed for both classes (0 and 1), without considering class imbalance, and give a general overview of the model’s performance.
 
-* Weighted Average: The weighted average takes into account the number of samples in each class:
-  * Precision: 0.86
-  * Recall: 0.89
-  * F1-Score: 0.84
+* **Weighted Average:** The weighted average takes into account the number of samples in each class:
+  * **Precision:** 0.86
+  * **Recall:** 0.89
+  * **F1-Score:** 0.84
 This suggests that the model performs better on class 0 (non-defaulters), which is likely because it has many more instances in the dataset.
 
 ## **2. Confusion Matrix**
