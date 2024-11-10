@@ -29,11 +29,10 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
   * F1-Score: 0.50
   * These averages are computed for both classes (0 and 1), without considering class imbalance, and give a general overview of the model’s performance.
 
-Weighted Average: The weighted average takes into account the number of samples in each class:
-
-Precision: 0.86
-Recall: 0.89
-F1-Score: 0.84
+* Weighted Average: The weighted average takes into account the number of samples in each class:
+  * Precision: 0.86
+  * Recall: 0.89
+  * F1-Score: 0.84
 This suggests that the model performs better on class 0 (non-defaulters), which is likely because it has many more instances in the dataset.
 
 ## **2. Confusion Matrix**
