@@ -52,17 +52,19 @@ This highlights a severe issue with classifying defaulters, as the model only id
 auc_score = roc_auc_score(y_test, y_pred_proba)
 print("Test ROC-AUC Score:", auc_score)
 ```
-ROC-AUC stands for the Receiver Operating Characteristic - Area Under the Curve. It is a measure of how well the model distinguishes between the classes (non-default and default). The higher the ROC-AUC score, the better the model.
+* **ROC-AUC stands for the Receiver Operating Characteristic - Area Under the Curve.** It is a measure of how well the model distinguishes between the classes (non-default and default). The higher the ROC-AUC score, the better the model.
 
-Test ROC-AUC Score: 0.7492 – This means that the model has a good ability to distinguish between defaulters and non-defaulters, but it is not perfect. A score above 0.7 is generally considered decent, and a score close to 1.0 would indicate a near-perfect model.
-Key Insights:
-Class Imbalance Problem: The model has difficulty identifying defaulters because there are far fewer defaulters than non-defaulters in the dataset. This is reflected in the low recall for class 1 (defaulters), where only 3% of actual defaulters are correctly predicted.
+  * **Test ROC-AUC Score: 0.7492 – This means that the model has a good ability to distinguish between defaulters and non-defaulters, but it is not perfect. A score above 0.7 is generally considered decent, and a score close to 1.0 would indicate a near-perfect model.
 
-Precision vs Recall: The model has good precision for predicting non-defaulters, but its recall for defaulters is very poor. This suggests that the model is conservative when predicting defaulters and misses most of them.
+ 
+## **Key Insights:**
+* **Class Imbalance Problem:** The model has difficulty identifying defaulters because there are far fewer defaulters than non-defaulters in the dataset. This is reflected in the low recall for class 1 (defaulters), where only 3% of actual defaulters are correctly predicted.
 
-Improvement Areas: The model’s ability to identify defaulters can be improved by addressing the class imbalance. Techniques like:
+* **Precision vs Recall:** The model has good precision for predicting non-defaulters, but its recall for defaulters is very poor. This suggests that the model is conservative when predicting defaulters and misses most of them.
 
-Oversampling the minority class (defaulters)
-Undersampling the majority class (non-defaulters)
-Using algorithms like Random Forest or XGBoost that handle class imbalance better
-Adjusting class weights in the model could help improve the recall and F1 score for the defaulter class.
+* **Improvement Areas:** The model’s ability to identify defaulters can be improved by addressing the class imbalance. Techniques like:
+
+  * **Oversampling the minority class (defaulters)**
+  * **Undersampling the majority class (non-defaulters)**
+  * **Using algorithms like Random Forest or XGBoost** that handle class imbalance better
+  * **Adjusting class weights** in the model could help improve the recall and F1 score for the defaulter class.
