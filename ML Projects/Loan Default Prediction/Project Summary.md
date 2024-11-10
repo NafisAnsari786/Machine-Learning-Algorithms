@@ -39,14 +39,13 @@ This suggests that the model performs better on class 0 (non-defaulters), which 
 ```python
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 ```
-
 The confusion matrix provides a detailed breakdown of the model’s performance by showing how many samples were classified into each of the four categories:
 
-**(True Negatives (TN): 67,492 – These are the non-defaulters who were correctly predicted as non-defaulters.
-False Positives (FP): 189 – These are non-defaulters who were incorrectly predicted as defaulters (Type I error).
-False Negatives (FN): 8,618 – These are defaulters who were incorrectly predicted as non-defaulters (Type II error).
-True Positives (TP): 306 – These are defaulters who were correctly predicted as defaulters.
-This highlights a severe issue with classifying defaulters, as the model only identified 306 defaulters out of 8,924 actual defaulters (indicating poor recall for the default class).)**
+  * **True Negatives (TN): 67,492** – These are the non-defaulters who were correctly predicted as non-defaulters.
+  * **False Positives (FP): 189**– These are non-defaulters who were incorrectly predicted as defaulters (Type I error).
+  * **False Negatives (FN): 8,618** – These are defaulters who were incorrectly predicted as non-defaulters (Type II error).
+  * **True Positives (TP): 306** – These are defaulters who were correctly predicted as defaulters.
+This highlights a severe issue with classifying defaulters, as the model only identified 306 defaulters out of 8,924 actual defaulters (indicating poor recall for the default class).
 
 ## **3. ROC-AUC Score**
 ```python
