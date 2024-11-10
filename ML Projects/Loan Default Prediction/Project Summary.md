@@ -17,19 +17,18 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
   * F1-Score for class 0 (Non-Defaulters): 0.94 – A good F1 score, meaning that for non-defaulters, the model is quite accurate.
   * F1-Score for class 1 (Defaulters): 0.06 – A very poor F1 score for defaulters, meaning the model has difficulty predicting defaulters accurately.
 
-*Support: The number of occurrences of each class in the test set.
+* Support: The number of occurrences of each class in the test set.
   *Support for class 0 (Non-Defaulters): 67,681
   *Support for class 1 (Defaulters): 8,924
  
 * Overall accuracy: 0.89 – This means that 89% of the total predictions are correct, but accuracy alone doesn’t tell the whole story in imbalanced datasets like this one (where defaulters are much less frequent).
 
-Macro Average:
-
-Precision: 0.75
-Recall: 0.52
-F1-Score: 0.50
-These averages are computed for both classes (0 and 1), without considering class imbalance, and give a general overview of the model’s performance.
-Weighted Average: The weighted average takes into account the number of samples in each class:
+* Macro Average:
+ * Precision: 0.75
+ * Recall: 0.52
+ * F1-Score: 0.50
+ * These averages are computed for both classes (0 and 1), without considering class imbalance, and give a general overview of the model’s performance.
+ Weighted Average: The weighted average takes into account the number of samples in each class:
 
 Precision: 0.86
 Recall: 0.89
