@@ -54,7 +54,7 @@ print("Test ROC-AUC Score:", auc_score)
 ```
 * **ROC-AUC stands for the Receiver Operating Characteristic - Area Under the Curve.** It is a measure of how well the model distinguishes between the classes (non-default and default). The higher the ROC-AUC score, the better the model.
 
-  * **Test ROC-AUC Score: 0.7492 – This means that the model has a good ability to distinguish between defaulters and non-defaulters, but it is not perfect. A score above 0.7 is generally considered decent, and a score close to 1.0 would indicate a near-perfect model.
+  * **Test ROC-AUC Score: 0.7492** – This means that the model has a good ability to distinguish between defaulters and non-defaulters, but it is not perfect. A score above 0.7 is generally considered decent, and a score close to 1.0 would indicate a near-perfect model.
 
  
 ## **Key Insights:**
