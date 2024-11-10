@@ -14,12 +14,12 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
   * Recall for class 1 (Defaulters): 0.03 – This is very low, indicating that only 3% of the actual defaulters were correctly identified by the model.
 
 * F1-Score: The harmonic mean of precision and recall. It’s a combined measure that considers both false positives and false negatives.
- * F1-Score for class 0 (Non-Defaulters): 0.94 – A good F1 score, meaning that for non-defaulters, the model is quite accurate.
- * F1-Score for class 1 (Defaulters): 0.06 – A very poor F1 score for defaulters, meaning the model has difficulty predicting defaulters accurately.
+  * F1-Score for class 0 (Non-Defaulters): 0.94 – A good F1 score, meaning that for non-defaulters, the model is quite accurate.
+  * F1-Score for class 1 (Defaulters): 0.06 – A very poor F1 score for defaulters, meaning the model has difficulty predicting defaulters accurately.
 
 *Support: The number of occurrences of each class in the test set.
- *Support for class 0 (Non-Defaulters): 67,681
- *Support for class 1 (Defaulters): 8,924
+  *Support for class 0 (Non-Defaulters): 67,681
+  *Support for class 1 (Defaulters): 8,924
  
 * Overall accuracy: 0.89 – This means that 89% of the total predictions are correct, but accuracy alone doesn’t tell the whole story in imbalanced datasets like this one (where defaulters are much less frequent).
 
