@@ -2,9 +2,9 @@
 ```python
 print("Classification Report:\n", classification_report(y_test, y_pred))
 ```
-This report gives detailed statistics on the performance of your classification model. It includes the following metrics for each class (0 and 1) as well as average metrics for the model:
+* This report gives detailed statistics on the performance of your classification model. It includes the following metrics for each class (0 and 1) as well as average metrics for the model:
 
-*Precision: The percentage of true positive predictions (correct defaulters) out of all positive predictions (predicted defaulters).
+* Precision: The percentage of true positive predictions (correct defaulters) out of all positive predictions (predicted defaulters).
 
 Precision for class 0 (Non-Defaulters): 0.89 – This means that when the model predicts non-default, 89% of the time it is correct.
 Precision for class 1 (Defaulters): 0.62 – This means that when the model predicts default, 62% of the time it is correct.
@@ -35,7 +35,11 @@ Recall: 0.89
 F1-Score: 0.84
 This suggests that the model performs better on class 0 (non-defaulters), which is likely because it has many more instances in the dataset.
 
-2. Confusion Matrix
+## **2. Confusion Matrix**
+```
+print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+```
+
 The confusion matrix provides a detailed breakdown of the model’s performance by showing how many samples were classified into each of the four categories:
 
 **(True Negatives (TN): 67,492 – These are the non-defaulters who were correctly predicted as non-defaulters.
