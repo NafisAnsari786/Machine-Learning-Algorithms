@@ -48,7 +48,11 @@ False Negatives (FN): 8,618 – These are defaulters who were incorrectly predic
 True Positives (TP): 306 – These are defaulters who were correctly predicted as defaulters.
 This highlights a severe issue with classifying defaulters, as the model only identified 306 defaulters out of 8,924 actual defaulters (indicating poor recall for the default class).)**
 
-3. ROC-AUC Score
+## **3. ROC-AUC Score**
+```python
+auc_score = roc_auc_score(y_test, y_pred_proba)
+print("Test ROC-AUC Score:", auc_score)
+```
 ROC-AUC stands for the Receiver Operating Characteristic - Area Under the Curve. It is a measure of how well the model distinguishes between the classes (non-default and default). The higher the ROC-AUC score, the better the model.
 
 Test ROC-AUC Score: 0.7492 – This means that the model has a good ability to distinguish between defaulters and non-defaulters, but it is not perfect. A score above 0.7 is generally considered decent, and a score close to 1.0 would indicate a near-perfect model.
