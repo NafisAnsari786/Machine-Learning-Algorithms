@@ -1,1 +1,1 @@
-**Logistic Regression: Binary Classification**
+## **Logistic Regression: Binary Classification**
