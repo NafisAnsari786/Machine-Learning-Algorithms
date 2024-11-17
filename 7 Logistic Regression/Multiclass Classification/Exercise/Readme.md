@@ -1,1 +1,1 @@
-## **Iris Prediction (Simple)**
+## **Iris Prediction (Simple Predictor)**
