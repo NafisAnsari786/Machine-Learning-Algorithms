@@ -1,4 +1,4 @@
-## Key Insights:  
+## Key Insights: 
  
 - **Credit History**: Applicants with no or poor credit history tend to have a higher likelihood of defaulting on loans. This suggests that financial institutions should consider enforcing a minimum credit score or history requirement before approving loans.
 
