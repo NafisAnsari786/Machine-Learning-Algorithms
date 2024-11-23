@@ -1,1 +1,2 @@
-## **Classifying the best model and paramter using Cross Val Score**
+## **Classifying the best model and paramters using Cross Val Score**
+
