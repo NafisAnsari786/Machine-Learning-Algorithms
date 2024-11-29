@@ -3,4 +3,3 @@
 - **Using Z-score**
 - **Using IQR**
 
-
