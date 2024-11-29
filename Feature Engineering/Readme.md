@@ -2,4 +2,3 @@
 - **Using Quantile**
 - **Using Z-score**
 - **Using IQR**
-
