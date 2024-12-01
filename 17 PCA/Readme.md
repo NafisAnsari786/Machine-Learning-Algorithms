@@ -1,1 +1,1 @@
-## **Principle Component Analysis for Demensionality Reduction**
+## **Principal Component Analysis for Dimensionality Reduction**
