@@ -1,1 +1,1 @@
-## ** *Heart Failure Prediction using Bagging Classifier* **
+## ***Heart Failure Prediction using Bagging Classifier***
