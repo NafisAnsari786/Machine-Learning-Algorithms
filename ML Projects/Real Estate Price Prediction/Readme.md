@@ -20,8 +20,17 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
 3. nginx setup
 
     i. Install nginx on EC2 instance using these commands,
-```bash
-sudo apt-get update
-sudo apt-get install nginx
-```
-    ii. sudo service nginx status
+    ```bash
+    sudo apt-get update
+    sudo apt-get install nginx
+    ```
+    ii. Above will install nginx as well as run it. Check status of nginx using
+   ```bash
+   sudo service nginx status
+   ```
+   iii. Here are the commands to start/stop/restart nginx
+   ```bash
+   sudo service nginx start
+    sudo service nginx stop
+    sudo service nginx restart
+   ```
