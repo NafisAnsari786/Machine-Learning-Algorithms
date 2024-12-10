@@ -24,3 +24,4 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
 sudo apt-get update
 sudo apt-get install nginx
 ```
+    ii. sudo service nginx status
