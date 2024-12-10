@@ -18,6 +18,7 @@ This data science project series walks through step by step process of how to bu
 ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.compute.amazonaws.com
 ```
 3. nginx setup
+
     i. Install nginx on EC2 instance using these commands,
    ```bash
    sudo apt-get update
