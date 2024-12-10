@@ -20,7 +20,7 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
 3. nginx setup
 
     i. Install nginx on EC2 instance using these commands,
-   ```bash
-   sudo apt-get update
-   sudo apt-get install nginx
-   ```
+```bash
+sudo apt-get update
+sudo apt-get install nginx
+```
