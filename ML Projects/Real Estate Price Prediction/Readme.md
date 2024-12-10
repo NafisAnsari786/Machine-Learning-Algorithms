@@ -31,6 +31,6 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
    iii. Here are the commands to start/stop/restart nginx
    ```bash
    sudo service nginx start
-    sudo service nginx stop
-    sudo service nginx restart
+   sudo service nginx stop
+   sudo service nginx restart
    ```
