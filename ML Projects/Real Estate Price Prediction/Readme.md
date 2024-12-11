@@ -34,5 +34,32 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
    sudo service nginx stop
    sudo service nginx restart
    ```
+   iv. Now when you load cloud url in browser you will see a message saying "welcome to nginx" This means your nginx is setup and running.
+4. Now you need to copy all your code to EC2 instance. You can do this either using git or copy files using winscp. We will use winscp.
+5. Once you connect to EC2 instance from winscp, you can now copy all your code files into /home/ubuntu/ folder. The full path of your root folder is now: /home/ubuntu/BHP.
+6. After copying code on EC2 server now you can point nginx to load your property website by default. Follow the steps below,
+   i. Create this file /etc/nginx/sites-available/bhp.conf. The file content looks like this,
+   ```bash
+   server {
+    listen 80;
+    server_name <your server_name or IP on EC2>;  # Your EC2 public IP address
+
+    root /var/www/html;  # Path to your static files
+    index app.html;  # Default file to load
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # Reverse Proxy for Flask backend
+    location /api/ {
+        proxy_pass http://127.0.0.1:5000;  # Forward to Flask app running on port 5000
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+     }
+    ```
+   
 
 Running last command above will prompt that server is running on port 5000. 8. Now just load your cloud url in browser (for me it was http://ec2-16-171-7-165.eu-north-1.compute.amazonaws.com) and this will be fully functional website running in production cloud environment
