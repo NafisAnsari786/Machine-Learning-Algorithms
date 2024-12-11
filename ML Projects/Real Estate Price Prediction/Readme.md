@@ -60,6 +60,10 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
         }
      }
     ```
+   ii. Create symlink for this file in /etc/nginx/sites-enabled by running this command,
+   ```
+   sudo ln -v -s /etc/nginx/sites-available/bhp.conf
+   ```
    
 
 Running last command above will prompt that server is running on port 5000. 8. Now just load your cloud url in browser (for me it was http://ec2-16-171-7-165.eu-north-1.compute.amazonaws.com) and this will be fully functional website running in production cloud environment
