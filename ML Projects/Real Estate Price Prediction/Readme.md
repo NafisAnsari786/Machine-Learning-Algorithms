@@ -79,5 +79,6 @@ sudo pip3 install -r /home/ubuntu/BHP/server/requirements.txt
 python3 /home/ubuntu/BHP/client/server.py
 ```
 Running the last command above will prompt that the server is running on port 5000.
+
 8. Now just load your cloud URL in a browser (for me, it was [http://ec2-16-171-7-165.eu-north-1.compute.amazonaws.com](http://ec2-16-171-7-165.eu-north-1.compute.amazonaws.com)) and this will be a fully functional website running in a production cloud environment
 
