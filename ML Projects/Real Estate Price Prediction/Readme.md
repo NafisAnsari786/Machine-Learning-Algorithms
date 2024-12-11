@@ -42,7 +42,7 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
    ```bash
    server {
     listen 80;
-    server_name <your server_name or IP on EC2>;  # Your EC2 public IP address
+    server_name <'your server_name or IP on EC2'>;  # Your EC2 public IP address
 
     root /var/www/html;  # Path to your static files
     index app.html;  # Default file to load
