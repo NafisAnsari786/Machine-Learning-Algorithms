@@ -64,6 +64,18 @@ ssh -i "C:\Users\Nafis Ansari\.ssh\bhp.pem" ubuntu@ec2-16-171-7-165.eu-north-1.c
    ```
    sudo ln -v -s /etc/nginx/sites-available/bhp.conf
    ```
-   
-
+   iii. Remove symlink for default file in /etc/nginx/sites-enabled directory,
+   ```bash
+   sudo unlink default
+   ```
+   iv. Restart nginx,
+   ```bash
+   sudo service nginx restart
+   ```
+7. Now install python packages using the requirements.txt and start flask server
+```bash
+sudo apt-get install python3-pip
+sudo pip3 install -r /home/ubuntu/BHP/server/requirements.txt
+python3 /home/ubuntu/BHP/client/server.py
+```
 Running last command above will prompt that server is running on port 5000. 8. Now just load your cloud url in browser (for me it was http://ec2-16-171-7-165.eu-north-1.compute.amazonaws.com) and this will be fully functional website running in production cloud environment
